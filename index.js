@@ -11,8 +11,17 @@ document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").innerHTML = "Player1 Wins";
+    setTimeout(function() {
+        document.querySelector("h1").innerHTML = "Refresh Me";
+    }, 2000);
 } else if (randomNumber2 > randomNumber1) {
     document.querySelector("h1").innerHTML = "Player2 Wins";
+    setTimeout(function() {
+        document.querySelector("h1").innerHTML = "Refresh Me";
+    }, 2000);
 } else {
-    document.querySelector("h1").innerHTML = "Draw"
+    document.querySelector("h1").innerHTML = "Draw";
+    setTimeout(function() {
+        document.querySelector("h1").innerHTML = "Refresh Me";
+    }, 2000);
 }
